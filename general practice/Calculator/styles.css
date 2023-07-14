@@ -33,7 +33,7 @@ label {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 16px;
+    gap: 10px;
     padding: 5px;
     max-width: 1400px;
     overflow: auto;
@@ -49,6 +49,10 @@ label {
     border-radius: 5%;
     font-size: 36px;
     max-width: 125px
+}
+
+.button:hover {
+    background-color:rgb(33, 33, 33);
 }
 
 
@@ -67,4 +71,8 @@ label {
     font-size: 36px;
     left: 100px;
     width: 80%
+}
+
+.enter:hover {
+    background-color: rgb(33, 33, 33);
 }
