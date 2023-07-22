@@ -1,47 +1,103 @@
-@media (prefers-reduced-motion: no-preference) {
-    * {
-        scroll-behavior: smooth;
-    }
-}
-  
+@font-face { font-family: RobotoMono;src: url('fonts/RobotoMono-Regular.ttf');} 
+@font-face {font-family: SpaceMono;src: url('fonts/SpaceMono-Regular.ttf')}
 
-body {
-    background-color: #FFFFFF;
-}
+/* By Default, the web page is going to in mobile */
 
 header {
-    width: 100%;
-    height: 50px;
-    background-color: #4F5D75;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
-    left: 0;
-    top: 0;
-}
-
-.something {
-    width: 75%;
-}
-
-a {
-    text-decoration: none;
-    color: #EF8354;
-    font-family: Helvetica;
-    
-}
-
-p {
-    color: #2D3142;
-    font-family: Helvetica;
-}
-
-.about {
-    background-color: #BFC0C0;
     width: 100%;
+    top: 0;
     left: 0;
-    padding: 10px 50px;
+    height: 5vh;
+    background-color: #1C2026;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 10px;
+}
+
+.sep {
+    display: none;
+}
+
+.nav-link-bg {
+    padding: 0px 3px;
+    background:  gradient(#1C2026 50%, #282C34);
+    border-radius: 2px;
+}
+
+header a {
+    font-family: RobotoMono;
+    color: #E06C75;
+    text-decoration: none;
+}
+
+.name {
+    font-size: 4vh;
     text-align: center;
 }
 
+/* Media query for larger screens (desktop) */
+@media screen and (min-width: 768px) {
+    header {
+        justify-content: space-between;
+        padding: 5px 15px;
+    }
+    
+    .sep {
+        display: flex;
+        gap: 15px;
+        padding-right: 4vw;
+    }
+
+    .name {
+        font-size: 3vh;
+    }
+}
+
+/* Basic background and colors and font selectors */
+body {
+    background-color: #282C34;
+}
+
+.header-gap {
+    height: 15vh;
+    width: 100%;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    border-radius: 50%;
+    width: 30%;
+    max-width: 200px;
+}
+
+.about-name {
+    padding: 30px;
+    font-size: 5vh;
+}
+
+.primary {
+    font-family: SpaceMono, sans-serif;
+    color: #61AFEF;
+}
+
+.desc {
+    padding: 5px 10vw;
+}
+
+.text {
+    font-family: RobotoMono, sans-serif;
+    color: #ABB2BF;
+}
+
+.btm {
+    position: relative;
+    top: 100vh;
+
+}
