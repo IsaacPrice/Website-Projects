@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    overflow-y: scroll;
+}
+
+.day {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    margin: 2px;
+    text-align: center;
+    vertical-align: top;
+    background-color: red;  /* Default to red */
+    cursor: pointer;  /* Make it clear you can click on each day */
+}
+
+.day.completed {
+    background-color: green;  /* Checked days are green */
+}
+
+.day.not-completed {
+    background-color: red;  /* Unchecked days are red */
+}
+
+.week {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
