@@ -22,13 +22,15 @@ header {
 
 .nav-link-bg {
     padding: 0px 3px;
-    background:  gradient(#1C2026 50%, #282C34);
+    background: #282c3481;
     border-radius: 2px;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 header a {
-    font-family: RobotoMono;
-    color: #E06C75;
     text-decoration: none;
 }
 
@@ -87,17 +89,42 @@ img {
     color: #61AFEF;
 }
 
+.secondary {
+    font-family: RobotoMono;
+    color: #E06C75;
+}
+
 .desc {
     padding: 5px 10vw;
+    max-width: 750px;
 }
 
 .text {
     font-family: RobotoMono, sans-serif;
     color: #ABB2BF;
+    font-size: 1.33rem;
 }
 
-.btm {
-    position: relative;
-    top: 100vh;
+.ul-title {
+    font-size: 1.5rem;
+}
 
+.skills {
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    width: 95%;
+    background-color: #22262d;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.skill {
+    background-color: #282C34;
+    border-radius: 5px;
+    padding: 15px;
 }
