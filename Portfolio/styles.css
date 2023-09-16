@@ -128,3 +128,57 @@ img {
     border-radius: 5px;
     padding: 15px;
 }
+
+.timeline {
+    height: 60vh;
+    overflow-x: auto;
+    white-space: nowrap; /* Keeps the contents on a single line */
+    /* Optional: Hide scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scroll-snap-type: x mandatory;
+}
+
+.infos {
+    display: flex;
+}
+
+.bottom-line {
+    position: relative;
+    top: 5vh;
+    height: 3px;
+    width: 200vw;
+    background-color: white;
+}
+
+.informational-widget {
+    background-color: #22262d;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    height: 35vh;
+    margin-top: 5vh;
+    scroll-snap-align: start; /* This makes the start (left edge for LTR languages) of the element a snap position */
+    opacity: 0;
+    transform: translateX(-10%); /* Move the element slightly to the left initially */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Apply transition to both opacity and transform properties */
+    will-change: opacity, transform; /* Hint to the browser that these properties will be animated */
+}
+
+.informational-widget.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.accent {
+    font-family: RobotoMono;
+    color: #98C379;
+}
+
+.information {
+    font-size: 2.33vh;
+}
